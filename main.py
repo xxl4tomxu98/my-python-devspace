@@ -8,5 +8,5 @@ class MyServer(socketserver.TCPServer):
     allow_reuse_address = True
 
 with MyServer(("", PORT), Handler) as httpd:
-    print("We serve at port", PORT)
+    print("It is served at port", PORT)
     httpd.serve_forever()
